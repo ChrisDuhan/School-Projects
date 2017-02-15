@@ -1,0 +1,58 @@
+# include <iostream>
+# include <fstream>
+# include <cctype>
+
+using namespace std;
+
+int main()
+{
+
+int firstVal = 0, line = 0, smallest = 0, 
+	largest = 0, oddCount = 0,
+	evenSum = 0, num1 = 0, num2 = 0;
+
+ifstream infile;
+ofstream outfile;
+
+infile.open("numbers.dat")
+outfile.open("Duhan_Max_B.txt")
+
+infile >> firstVal
+
+for(int i = 0; i < firstVal; i++)
+{
+infile >> num1;
+if(num1 != 0)
+{
+infile >> num2
+if(num2 != 0)
+{
+switch(num2)
+{
+case(num1 > num2):
+largest = num1;
+smallest = num2;
+break;
+case(num2 < num1):
+largest = num2;
+smallest = num1;
+break;
+default:
+largest = num1;
+smallest = num1;
+}
+if(num1 % 2 == 0)
+evenSum += num1
+else
+oddCount++
+
+if(num2 % 2 == 0)
+evenSum += num1
+else
+oddCount++
+}
+}
+
+}
+
+}	
